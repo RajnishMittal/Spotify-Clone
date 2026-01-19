@@ -6,7 +6,7 @@ This project recreates the look and feel of Spotify’s web player, including na
 ---
 
 ## 📸 Preview
-> *(Add screenshots or a demo video here)*
+<img width="1919" height="916" alt="image" src="https://github.com/user-attachments/assets/7793c045-d8eb-4597-8f8a-a111e983a74c" />
 
 ---
 
@@ -33,7 +33,7 @@ This project recreates the look and feel of Spotify’s web player, including na
 - **JavaScript (ES6 Modules)** – Functionality & audio control  
 
 ---
-<img width="1919" height="916" alt="image" src="https://github.com/user-attachments/assets/7793c045-d8eb-4597-8f8a-a111e983a74c" />
+
 
 ## 📂 Project Structure
 
