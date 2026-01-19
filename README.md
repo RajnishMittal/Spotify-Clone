@@ -37,3 +37,15 @@ This project recreates the look and feel of Spotify’s web player, including na
 
 ## 📂 Project Structure
 
+spotify-clone/
+│
+├── index.html
+├── style.css
+├── utility.css
+├── script.js
+├── icons/
+│ ├── play.svg
+│ ├── previous.svg
+│ └── forward.svg
+└── README.md
+
