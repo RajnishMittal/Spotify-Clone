@@ -1,0 +1,36 @@
+
+.flex{
+    display: flex;
+}
+.justify-center{
+    align-items: center;
+}
+.items-center{
+    align-items: center;
+}
+/* Works in Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Track background */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #444; /* Scroll thumb */
+  border-radius: 6px;
+  border: 3px solid #1a1a1a; /* Matches track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;         /* auto | thin | none */
+  scrollbar-color: #444 #1a1a1a; /* thumb color | track color */
+}
+

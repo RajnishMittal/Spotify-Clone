@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    background-color: black;
+    box-shadow: inset;
+    overflow-x: hidden;
+    
+}
+
+
+.left {
+    width: 25vw;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    border-radius: 10px;
+    margin-right: 3px;
+}
+
+.right {
+    position: relative;
+    width: 75vw;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    border-radius: 10px;
+    /* box-shadow: inset; */
+    box-shadow: inset 12px 20px 1000px #043813;
+    transition: all 0.5s ease-in-out 0.2s;
+    height: 90vh;
+}
+
+.right:has(.card:hover) {
+    box-shadow: inset 12px 20px 1000px #2f3d4e;
+}
+
+.container {
+    margin-top: 0px;
+}
+
+nav .box {
+    /* border: 9px solid white; */
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+nav .box:hover {
+    background-color: #282828;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.searchcontainer input {
+
+    background-color: rgb(31, 31, 31);
+    border: none;
+    border-radius: 30px;
+    height: 45px;
+    width: 25vw;
+    padding: 0 50px 0 50px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+/* .searchcontainer{
+    transition: all 0.1s ease-in-out 0s;
+} */
+
+.searchcontainer input:hover {
+    background-color: #2A2A2A;
+    /* border: 0.5px solid grey; */
+
+}
+
+
+.searchcontainer:hover svg:first-child {
+    fill: white;
+}
+
+.searchcontainer {
+    position: relative;
+
+}
+
+
+
+.searchcontainer svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.searchcontainer svg:first-child {
+    left: 12px;
+    transition: all 0.1s ease-in-out 0s;
+}
+.searchcontainer svg:first-child:hover{
+    cursor: pointer;
+}
+
+.searchcontainer svg:last-child {
+    right: 12px;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+.searchcontainer svg:last-child:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+.rightnav ul li {
+    margin: 15px;
+    list-style: none;
+    font-size: 18px;
+    gap: 20px;
+}
+
+.rightnav button {
+    border-radius: 30px;
+    width: 100px;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+.rightnav button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+ul {
+    color: rgb(255, 255, 255);
+    list-style: none;
+    
+}
+
+.one .hovering {
+    transition: all 0.1s ease-in-out 0s;
+}
+
+.one .hovering:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.two li {
+    transition: all 0.1s ease-in-out 0s;
+}
+
+.two li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.rightnav span {
+    color: white;
+    font-size: xx-large;
+}
+
+nav .rightnav {
+    display: flex;
+    margin-left: auto;
+    text-align: center;
+}
+
+.playlists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    max-height: 75vh;
+    overflow-y: scroll;
+    /* padding: 0 10px 0 0px; */
+}
+
+.card {
+    /* border: 2px solid pink; */
+    width: 200px;
+    padding: 15px 10px;
+    position: relative;
+    /* background-color: black; */
+    transition: all 0.3s ease 0s;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.card p {
+    color: #868686;
+
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: #1C1C1C;
+    border-radius: 10px;
+}
+
+.card:hover svg {
+    cursor: pointer;
+    opacity: 1;
+    bottom: 105px;
+    rotate: 360deg;
+    /* box-shadow: #2c3f52; */
+}
+
+.card svg {
+    width: 35px;
+    position: absolute;
+    background-color: #3ae075;
+    border-radius: 50%;
+    padding: 10px;
+    right: 20px;
+    bottom: 90px;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+
+}
+.playbar{
+    position: fixed;
+    /* position: relative; */
+    bottom: 0;
+    background-color: #3ae075;
+    left: 0;
+    width: 100vw;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.songbuttons img{
+    cursor: pointer;
+}
+.song-item {
+    padding: 10px 12px;
+    margin: 6px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    transition: background 0.2s ease;
+    margin: 10px;
+}
+
+.song-item:hover {
+    background: #2a2a2a;
+    cursor: pointer;
+}
+
+.song-item .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.song-item .artist {
+    font-size: 13px;
+    color: #bbbbbb;
+}
+button{
+    background: none;
+    border: none;
+    transition: all 1s 1s ease-out;
+}
+button:hover{
+    background-color: 	(179,179,179);
+    border-radius: 70px;
+    padding: 5px;
+}
+#volumeSlider{
+    position: absolute;
+    right: 0;
+    margin: 40px 20px;
+}
+#seekBar {
+    width: 100vw;
+    position: fixed;
+    bottom: 70px;   /* height above your green bar */
+    left: 0;
+    z-index: 9999;
+    background-color: #1C1C1C;
+}
